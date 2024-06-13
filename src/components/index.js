@@ -11,7 +11,7 @@ import PostCard from "./PostCard";
 import AuthLayout from "./AuthLayout";
 import Button from "./Button";
 import Select from "./Select";
-
+import Login from "./Login"
 
 
 export{
@@ -27,5 +27,6 @@ export{
     PostCard,
     AuthLayout,
     Button,
-    Select
+    Select,
+    Login
 }

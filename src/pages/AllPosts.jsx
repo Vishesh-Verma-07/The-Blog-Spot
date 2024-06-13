@@ -1,5 +1,5 @@
 import React, {useState, useEffect} from 'react'
-import appwriteService from '../services/appwrite'
+import appwriteService from '../appwrite/config'
 import {Container, PostCard} from '../components'
 import { set } from 'react-hook-form'
 

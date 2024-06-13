@@ -4,9 +4,10 @@ import App from './App.jsx'
 import './index.css'
 import { Provider } from 'react-redux'
 import store from './store/store.js'
-import { createBrowserRouter } from 'react-router-dom'
+import { RouterProvider, createBrowserRouter } from 'react-router-dom'
 import { AuthLayout } from './components/index.js'
 import { Login, Signup, AllPosts, AddPost, EditPost, Post, Home } from './pages/index.js'
+
 
 const router = createBrowserRouter([
   {
