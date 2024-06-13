@@ -1,4 +1,4 @@
-import { Container } from "./container/Container";
+import Container  from "./container/Container";
 import Footer from "./Footer/Footer";
 import Header from "./Header/Header";
 import Logo from "./Logo";
@@ -9,6 +9,8 @@ import Signup from "../pages/Signup";
 import PostForm from "./post-form/PostForm";
 import PostCard from "./PostCard";
 import AuthLayout from "./AuthLayout";
+import Button from "./Button";
+import Select from "./Select";
 
 
 
@@ -24,4 +26,6 @@ export{
     PostForm,
     PostCard,
     AuthLayout,
+    Button,
+    Select
 }
