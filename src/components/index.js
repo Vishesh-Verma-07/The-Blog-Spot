@@ -1,10 +1,14 @@
-import { Container } from "postcss";
+import { Container } from "./container/Container";
 import Footer from "./Footer/Footer";
 import Header from "./Header/Header";
 import Logo from "./Logo";
 import LogoutBtn from "./Header/LogoutBtn";
 import Input from "./Input";
 import RTE from "./RTE";
+import Signup from "../pages/Signup";
+import PostForm from "./post-form/PostForm";
+import PostCard from "./PostCard";
+import AuthLayout from "./AuthLayout";
 
 
 
@@ -15,5 +19,9 @@ export{
     Logo,
     LogoutBtn,
     Input,
-    RTE
+    RTE,
+    Signup,
+    PostForm,
+    PostCard,
+    AuthLayout,
 }
