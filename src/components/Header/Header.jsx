@@ -38,7 +38,7 @@ function Header() {
 
 
     return (
-        <header className=' py-3 shadow bg-gray-500'>
+        <header className=' py-3 shadow bg-gray-500 border-4 border-yellow-500 '>
             <Container>
                 <nav className='flex'>
                     <div className=' mr-4'>
@@ -47,7 +47,7 @@ function Header() {
                         </Link>
                     </div>
                     <ul className='flex ml-auto'>
-                        {NavItems.map((item) => 
+                        {NavItems.map((item) => (
                             item.active ? (
                                 <li key={item.name}>
                                     <button
@@ -58,6 +58,7 @@ function Header() {
                                     </button>
                                 </li>
                             ) : null
+                        )
                         )}
                         {authStatus && (
                             <li>
