@@ -14,7 +14,6 @@ import AllPosts from './pages/AllPosts.jsx'
 import EditPost from './pages/EditPost.jsx'
 import Post from './pages/Post.jsx'
 
-
 const router = createBrowserRouter([
   {
     path: '/',
