@@ -29,7 +29,7 @@ export class Service{
                 }
             )
          } catch (error) {
-            console.log("appwirte servise :: getCurrentUser :: error", error);
+            console.log("appwirte servise :: CreatePost:: error", error);
          }
      }
 
@@ -47,7 +47,7 @@ export class Service{
                 }
             );
         } catch (error) {
-            console.log("appwirte servise :: getCurrentUser :: error", error); 
+            console.log("appwirte servise :: updatePost :: error", error); 
         }
      }
 
@@ -60,7 +60,7 @@ export class Service{
             )
             return true;
         } catch (error) {
-            console.log("appwirte servise :: getCurrentUser :: error", error);
+            console.log("appwirte servise :: DeletePost :: error", error);
             return false;
         }
      }
@@ -74,7 +74,7 @@ export class Service{
                 slug,
             )
         } catch (error) {
-            console.log("appwirte servise :: getCurrentUser :: error", error);
+            console.log("appwirte servise :: getPost :: error", error);
             return false;
         }
      }
@@ -87,7 +87,7 @@ export class Service{
                 queries,
             )
         } catch (error) {
-            console.log("appwirte servise :: getCurrentUser :: error", error);
+            console.log("appwirte servise :: getPosts :: error", error);
             return false;
         }
      }

@@ -11,14 +11,6 @@ export default function Protected({children, authentication = true}) {
 
     useEffect(() => {
 
-        // todo 
-        //make it simpler
-        // if(authStatus === true){
-        //     navigate('/')
-        // }
-        // else if(authStatus === false){
-        //     navigate('/login')
-        // }
         if(authentication && authStatus !== authentication){
             navigate('/login')
         }

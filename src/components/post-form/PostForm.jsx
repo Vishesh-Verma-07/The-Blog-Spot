@@ -18,7 +18,6 @@ function PostForm({post}) {
 
     const navigate = useNavigate()
     const userData = useSelector(state => state.auth.userData)
-    console.log("userdata", userData)
 
     const submit = async (data) => {
         if(post){
@@ -33,7 +32,7 @@ function PostForm({post}) {
                 featuredImage: file ? file.$id : undefined
             })
            if(dbPost){
-               navigate(`/posts/${dbPost.$id}`)
+               navigate(`/post/${dbPost.$id}`)
            }
         }
         else{

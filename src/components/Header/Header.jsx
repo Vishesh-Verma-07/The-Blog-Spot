@@ -38,8 +38,8 @@ function Header() {
 
 
     return (
-        <header className=' py-3 shadow bg-gray-500 border-4 border-yellow-500 '>
-
+        <>
+        <header className=' py-3 shadow bg-gray-500  '>
             <Container>
                 <nav className='flex'>
                     <div className=' mr-4'>
@@ -69,8 +69,43 @@ function Header() {
                     </ul>
                 </nav>
                 </Container>
-           
         </header>
+
+		{/* {sticky top-0 z-10 backdrop-filter backdrop-blur-lg border-b-0 dark:bg-grey-900 dark:bg-opacity-40 border-gray-200 dark:border-b-0 flex justify-between h-16 w-full shrink-0 items-center px-4 md:px-8" */} 
+
+        <header className=' py-3 sticky top-0 shadow backdrop-filter backdrop-blur-sm bg-green/30   '>
+                <Container>
+                <nav className='flex'>
+                    <div className=' mr-4'>
+                        <Link to= '/'>
+                        <Logo width='50px'/>
+                        </Link>
+                    </div>
+                    <ul className='flex ml-auto'>
+                        {navItems.map((item) => (
+                            item.active ? (
+                                <li key={item.name}>
+                                    <button
+                                    onClick={ () => navigate(item.slug)}
+                                    className=' inline-block px-6 py-2 duration-200 hover:bg-blue-100 rounded-full'
+                                    >
+                                        {item.name}
+                                    </button>
+                                </li>
+                            ) : null
+                        )
+                        )}
+                        {authStatus && (
+                            <li>
+                                <LogoutBtn />
+                            </li>
+                        )}
+                    </ul>
+                </nav>
+                </Container>
+        </header>
+
+        </>
         
     )
 }
