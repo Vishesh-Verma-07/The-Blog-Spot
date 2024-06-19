@@ -15,6 +15,7 @@ function Login() {
     const [error, setError] = useState('')
 
     const login = async(data) =>{
+        console.log(data);
         setError('')
         try {
             const session = await authService.login(data)
@@ -31,10 +32,12 @@ function Login() {
     }
 
     return (
-        <div className='flex items-center justify-center w-full'>
-            <div className={`mx-auto w-full max-w-lg bg-green-100 rounded-xl border-collapse p-10 border-black/10`}>
+        <div className='flex items-center justify-center w-full bg-slate-50 p-12'>
+            <div className={`mx-auto w-full max-w-lg bg-zinc-200 rounded-xl p-10 border border-black/10`}>
                 <div className=' mb-2 flex justify-center'>
-                    <span className=' inline-block w-full max-w-[100px]'></span>
+                    <span className=' inline-block w-full max-w-[100px]'>
+                        <Logo width='100%' className='' />
+                    </span>
             </div>
             <h2 className=' text-2xl font-bold text-center'>Sign in to your account</h2>
             <p className="mt-2 text-center text-base text-black/60">
