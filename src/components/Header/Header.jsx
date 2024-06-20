@@ -38,8 +38,8 @@ function Header() {
 
 
     return (
-        
-        <header className=' p-3 sticky top-0  shadow bg-black invisible sm:visible  '>
+       
+        <header className=' p-3 sticky top-0  shadow bg-black  '>
             <Container>
                 <nav className='flex'>
                     <div className='flex justify-center items-center rounded-xl text-white hover:text-zinc-300 '>
