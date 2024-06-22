@@ -49,7 +49,7 @@ export class AuthService{
         try {
             await this.account.deleteSessions();
         } catch (error) {
-            console.log("appwirte servise :: getCurrentUser :: error", error);
+            console.log("appwirte servise :: logout :: error", error);
         }
     }
 }
