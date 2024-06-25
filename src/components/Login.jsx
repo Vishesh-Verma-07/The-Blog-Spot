@@ -15,7 +15,6 @@ function Login() {
     const [error, setError] = useState('')
 
     const login = async(data) =>{
-        console.log(data);
         setError('')
         try {
             const session = await authService.login(data)
@@ -23,7 +22,7 @@ function Login() {
                 const userData = await authService.getCurrentUser()
                 if(userData) {
                     dispatch(authLogin(userData))
-                    navigate('/')
+                    navigate('/all-posts')
                 }
             }
         } catch (error) {

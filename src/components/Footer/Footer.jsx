@@ -27,7 +27,7 @@ function Footer() {
             <hr className=' w-4/5 h-0.5 mx-12 bg-gray-100 border-0 rounded md:my-4 dark:bg-zinc-400' />
             <div className=' hover:text-white'>
                 <p className="text-sm m-4">
-                     &copy; Copyright 2023. All Rights Reserved by DevUI.
+                     &copy; Copyright 2023. All Rights Reserved by Vishesh Verma.
                 </p>
             </div>
 
